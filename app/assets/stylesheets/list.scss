@@ -1,3 +1,113 @@
 // Place all the styles related to the list controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// input[type='checkbox'] {
+// float: left;
+// position: relative;
+// display: block;
+// clear: both;
+// }
+
+@font-face {
+  font-family: 'above';
+  src: font-url('above.ttf') format('truetype');
+}
+
+.listHeader {
+  margin-bottom: -1px;
+  font-weight: bold;
+  color: #777;
+  font-family: 'above';
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 43em;
+}
+
+.listitem {
+  overflow: hidden;
+    position: relative;
+    background-color: white;
+    padding: 7px 0 7px 0;
+}
+
+.listitemtext {
+  float: left;
+  width: calc(100% - 40px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+  margin-left: 34px;
+  margin-top: 7px;
+  padding: 0px 15px 6px 0px;
+  text-overflow: ellipsis;
+  color: #333;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+}
+
+.checkbox {
+  width: 25px;
+  position: absolute;
+}
+
+.checkbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 5px;
+  left: 0;
+	background: #eee;
+	border:1px solid #ddd;
+}
+
+.checkbox label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+
+	transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkbox label:hover::after {
+	opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+
+h2 {
+}
