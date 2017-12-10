@@ -52,8 +52,8 @@
 
 
   <div class="container">
-    <div id='mediumitems'>
-      <ul>
+    <ul>
+      <div id='mediumitems'>
         <li>
           <h2 class="listHeader">Medium Items</h2>
             <div class="mediumappendbuttondiv">
@@ -96,14 +96,14 @@
           </div>
         <input type="text" name="" value="" class="listitemtext">
         </li>
-      </ul>
-  </div>
+    </div>
+  </ul>
 </div>
 
 
   <div class="container">
-    <div class="smallitems">
-      <ul>
+    <ul>
+      <div id="smallitems">
         <li>
           <h2 class="listHeader">Small Items</h2>
             <div class="smallappendbuttondiv">
@@ -160,8 +160,8 @@
           </div>
         <input type="text" name="" value="" class="listitemtext">
         </li>
-      </ul>
-    </div>
+      </div>
+    </ul>
   </div>
 
 
@@ -171,15 +171,47 @@
 </html>
 
 <script>
-var count=5;
+var bigCount=5;
+
+//function for appending items to the "big items" section
 $(document).ready(function(){
     $("#bigappendbutton").click(function(){
         $("#bigitems").append(function(){
-            return "<li class=\"listitem\"> <div class=\"checkbox\"> <input type=\"checkbox\" value=\"1\" id=\"checkboxInput('"+count+"')\"/> <label for=\"checkboxInput('"+count+"')\"> </label> </div> <input type=\"text\" name=\"\" value=\"\" class=\"listitemtext\" </li>";
+            return "<li class=\"listitem\"> <div class=\"checkbox\"> <input type=\"checkbox\" value=\"1\" id=\"checkboxInput('"+bigCount+"')\"/> <label for=\"checkboxInput('"+bigCount+"')\"> </label> </div> <input type=\"text\" name=\"\" value=\"\" class=\"listitemtext\" </li>";
 
 
         });
-        count++;
+        bigCount++;
+    });
+});
+
+//function for appending items to the "medium items" section
+
+var mediumCount = 11
+
+$(document).ready(function(){
+    $("#mediumappendbutton").click(function(){
+        $("#mediumitems").append(function(){
+            return "<li class=\"listitem\"> <div class=\"checkbox\"> <input type=\"checkbox\" value=\"1\" id=\"checkboxInput('"+mediumCount+"')\"/> <label for=\"checkboxInput('"+mediumCount+"')\"> </label> </div> <input type=\"text\" name=\"\" value=\"\" class=\"listitemtext\" </li>";
+
+
+        });
+        mediumCount++;
+    });
+});
+
+//function for appending items to the "small items" section
+
+var smallCount = 16
+
+$(document).ready(function(){
+    $("#smallappendbutton").click(function(){
+        $("#smallitems").append(function(){
+            return "<li class=\"listitem\"> <div class=\"checkbox\"> <input type=\"checkbox\" value=\"1\" id=\"checkboxInput('"+smallCount+"')\"/> <label for=\"checkboxInput('"+smallCount+"')\"> </label> </div> <input type=\"text\" name=\"\" value=\"\" class=\"listitemtext\" </li>";
+
+
+        });
+        smallCount++;
     });
 });
 </script>
