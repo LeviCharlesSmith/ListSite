@@ -8,10 +8,9 @@
 // clear: both;
 // }
 .strikethrough {
-  text-decoration: line-through;
-  color: red;
+  opacity: 0.5;
+  transition: 1s;
 }
-
 
 .plus {
   text-align: center;
@@ -72,7 +71,10 @@ body {
 
 input:focus {
   outline: none;
+  border-bottom: solid 1px #81171B;
+  transition: 1s;
 }
+
 
 .container {
   margin-left: auto;
@@ -103,6 +105,8 @@ input:focus {
   color: #333;
   font-size: 100%;
   text-decoration: inherit;
+  opacity: inherit;
+  transition: 0.5s;
 }
 
 ul {
@@ -144,6 +148,7 @@ input[type='checkbox'] {
 	border-right: none;
   transition: 0.5s;
 	transform: rotate(-45deg);
+
 }
 
 /**
@@ -160,4 +165,5 @@ input[type='checkbox'] {
 .checkbox input[type=checkbox]:checked + label:after {
 	opacity: 1;
   transition: 0.5s;
+  border-color: #81171B;
 }
