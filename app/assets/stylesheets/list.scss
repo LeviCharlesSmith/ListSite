@@ -19,7 +19,8 @@
   color: #999;
   font-family: above;
   font-size: x-small;
-    transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 10px;
 }
 a:visited,
 a:link {
@@ -127,12 +128,11 @@ input:focus {
 
 .titlediv {
   margin: auto;
-  width: 306px;
 }
 
 .listnametext {
   margin-top: 10px;
-  width: 300px;
+  width: 99%;
   border: none;
   box-shadow: none;
   height: 30px;
