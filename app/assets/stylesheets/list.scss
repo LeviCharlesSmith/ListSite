@@ -132,7 +132,7 @@ input:focus {
 
 .listnametext {
   margin-top: 10px;
-  width: 99%;
+  width: 100%;
   border: none;
   box-shadow: none;
   height: 30px;
@@ -141,6 +141,7 @@ input:focus {
   background-color: #81171B;
   color: white;
   font-family: above;
+  padding: none;
 }
 
 .listitemtext {
