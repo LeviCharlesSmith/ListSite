@@ -7,6 +7,40 @@
 // display: block;
 // clear: both;
 // }
+
+.header {
+  background-color: #81171B;
+  height: 50px;
+  width: 100vw;
+}
+
+.nav  {
+  float: right;
+  color: #999;
+  font-family: above;
+  font-size: x-small;
+    transition: 0.5s;
+}
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #999;
+  font-family: above;
+  font-size: x-small;
+    transition: 0.5s;
+}
+
+a:hover {
+  color: #81171B;
+  transition: 0.5s;
+}
+
+
+.divider {
+  border-bottom: 0.5px solid #ccc;
+  margin-top: 65px;
+}
+
 .strikethrough {
   opacity: 0.5;
   transition: 1s;
@@ -53,7 +87,7 @@ button {
 }
 
 body {
-  margin: 0px 0px 8px 0px;
+  margin: 0px;
 }
 
 @font-face {
@@ -80,6 +114,7 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
   max-width: 43em;
+    padding: 10px;
 }
 
 .listitem {
@@ -88,6 +123,24 @@ input:focus {
     background-color: white;
     padding: 7px 0 7px 0;
     clear: both;
+}
+
+.titlediv {
+  margin: auto;
+  width: 306px;
+}
+
+.listnametext {
+  margin-top: 10px;
+  width: 300px;
+  border: none;
+  box-shadow: none;
+  height: 30px;
+  text-align: center;
+  font-size: 200%;
+  background-color: #81171B;
+  color: white;
+  font-family: above;
 }
 
 .listitemtext {
