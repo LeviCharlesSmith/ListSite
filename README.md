@@ -1,24 +1,9 @@
 # README
+This site is a simple way to keep track of different items you need to get done, be it shopping or choores or anything. In the future features will continue to be added.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Features to be added:
+Customizing colors
+Saving
+Printing lists
+Emailing lists
+Syncing lists between devices
